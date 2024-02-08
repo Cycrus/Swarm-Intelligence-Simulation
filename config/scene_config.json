@@ -1,0 +1,16 @@
+{
+    "background_color": [
+        20,
+        20,
+        20
+    ],
+    "screen_width": 1800,
+    "screen_height": 1200,
+    "min_food_available": 6,
+    "start_obstacle_number": 10,
+    "mean_food_speed": 4,
+    "mean_food_energy": 230,
+    "food_type_ratio": [
+        1.0
+    ]
+}

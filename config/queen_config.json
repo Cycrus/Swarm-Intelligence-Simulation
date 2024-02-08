@@ -1,0 +1,47 @@
+{
+    "queens": [
+        {
+            "birth_energy_threshold": 300,
+            "energy": 300,
+            "max_energy": 1000,
+            "energy_reduction_rate": 0.2,
+            "worker_spawn_cost": 3,
+            "speed": 8,
+            "color": [
+                200,
+                0,
+                150
+            ],
+            "start_worker_number": 300,
+            "worker_type": {
+                "behavior": "AdvancedWorker",
+                "mean_energy": 150,
+                "energy_range": 10,
+                "mean_speed": 20,
+                "speed_range": 0,
+                "shouting_radius": 70
+            }
+        },
+        {
+            "birth_energy_threshold": 300,
+            "energy": 300,
+            "max_energy": 1000,
+            "energy_reduction_rate": 0.2,
+            "worker_spawn_cost": 8,
+            "speed": 8,
+            "color": [
+                200,
+                200,
+                150
+            ],
+            "start_worker_number": 100,
+            "worker_type": {
+                "behavior": "SimpleWorker",
+                "mean_energy": 150,
+                "energy_range": 10,
+                "mean_speed": 15,
+                "speed_range": 5
+            }
+        }
+    ]
+}
