@@ -260,8 +260,8 @@ class ConfigManager:
         20,
         20
       ],
-      "screen_width": 1900,
-      "screen_height": 1200,
+      "screen_width": 1600,
+      "screen_height": 1000,
       "min_food_available": 6,
       "start_obstacle_number": 10,
       "mean_food_speed": 4,

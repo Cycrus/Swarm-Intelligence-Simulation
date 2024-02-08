@@ -42,7 +42,7 @@ class Menu:
     Constructor. Initializes all aspect of the menu. Does not yet start pygame engine.
     """
     self.width = 1600
-    self.height = 1200
+    self.height = 1000
     self.white = (255, 255, 255)
     self.button_color = (100, 100, 100)
     self.selected_button_color = (150, 150, 150)
@@ -192,12 +192,12 @@ class Menu:
     """
     Displays all elements for the main menu.
     """
-    start_button = pygame.Rect(self.button_x, 500, self.button_width, self.button_height)
-    help_button = pygame.Rect(self.button_x, 700, self.button_width, self.button_height)
-    exit_button = pygame.Rect(self.button_x, 900, self.button_width, self.button_height)
+    start_button = pygame.Rect(self.button_x, 400, self.button_width, self.button_height)
+    help_button = pygame.Rect(self.button_x, 600, self.button_width, self.button_height)
+    exit_button = pygame.Rect(self.button_x, 800, self.button_width, self.button_height)
 
-    default_scene_config_button = pygame.Rect(self.side_button_x, 820, self.side_button_width, self.side_button_height)
-    default_queen_config_button = pygame.Rect(self.side_button_x, 940, self.side_button_width, self.side_button_height)
+    default_scene_config_button = pygame.Rect(self.side_button_x, 720, self.side_button_width, self.side_button_height)
+    default_queen_config_button = pygame.Rect(self.side_button_x, 840, self.side_button_width, self.side_button_height)
 
     self.checkButtonMethod(start_button, self.startScene)
     self.checkButtonMethod(help_button, self.setHelpState)
@@ -210,7 +210,7 @@ class Menu:
     self.drawButton("Help", help_button, self.button_font)
     self.drawButton("Exit", exit_button, self.button_font)
 
-    self.drawText("Set Default Configs", self.plain_text_font, self.side_button_x + 30, 770)
+    self.drawText("Set Default Configs", self.plain_text_font, self.side_button_x + 30, 670)
     self.drawButton("Default Scene Config", default_scene_config_button, self.small_font)
     self.drawButton("Default Queens Config", default_queen_config_button, self.small_font)
 
@@ -218,7 +218,7 @@ class Menu:
     """
     Displays all elements for the help dialog.
     """
-    back_button = pygame.Rect(self.button_x, 900, self.button_width, self.button_height)
+    back_button = pygame.Rect(self.button_x, 800, self.button_width, self.button_height)
 
     help_text = "Overview:\n" +\
                 "This program is supposed to showcase a simple version of swarm behavior.\n" +\
@@ -236,14 +236,14 @@ class Menu:
                 "In 'scene_config.json' You can configure global parameters of the simulation.\n"
 
     width = 1300
-    height = 630
+    height = 570
     x_pos = (self.width - width) //2 
     transparent_surface = pygame.Surface((width, height), pygame.SRCALPHA)
     transparent_surface.set_alpha(128)
 
     pygame.draw.rect(transparent_surface, self.white, (0, 0, width, height))
-    self.screen.blit(transparent_surface, (x_pos, 240))
-    self.drawText(help_text, self.plain_text_font, None, 260)
+    self.screen.blit(transparent_surface, (x_pos, 210))
+    self.drawText(help_text, self.plain_text_font, None, 230)
 
     self.checkButtonMethod(back_button, self.setMainState)
     self.drawButton("Go Back", back_button, self.button_font)
@@ -282,7 +282,7 @@ class Menu:
     while self.running:
       self.registerMouseClick()
       self.screen.blit(self.background_image, (0, 0))
-      self.drawText("Swarm Behavior Simulator", self.title_font, None, 130)
+      self.drawText("Swarm Behavior Simulator", self.title_font, None, 80)
       self.drawText("2023 by Cyril Marx", self.small_font, 10, self.height - 40)
       self.drawText("Background generated with pruned-emaonly 1.5", self.small_font, 945, self.height - 40)
       self.curr_state.display()
