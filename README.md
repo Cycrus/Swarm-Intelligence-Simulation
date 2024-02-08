@@ -11,6 +11,9 @@ On the right side of the screen you can see in numbers of the workers how the in
 
 Disclaimer: The project idea and the algorithm for the swarm simulation is inspired by the project ["Screaming Insects" by Simulife Hub](https://www.youtube.com/watch?v=Yu7sF9rcVJY&ab_channel=SimulifeHub).
 
+## Screenshot
+![Simulation Screenshot](resources/simulation_screenshot.png)
+
 ## Worker Types
 The workers come in different configurable types:
   - <b>Simple all-knowing workers</b> know everything that is happening and every position of every queen and food source in the scene at any time and always target the closest resource to bring back to the queen. Represents perfectly efficient swarming behavior.
