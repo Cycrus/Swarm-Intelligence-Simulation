@@ -1,4 +1,14 @@
-# Swarm-Intelligence-Simulation
+<div align="center">
+  <img src="resources/swarm_intelligence_logo.png" alt="Swarm Intelligence Logo" width="250">
+  <h1>Swarm Intelligence Simulation</h1>
+</div>
+
+<div align="center">
+  <img alt="License" src=https://img.shields.io/badge/License-MIT-green?style=flat-square>
+  <img alt="OS" src=https://img.shields.io/badge/OS-Linux,Windows-yellow?style=flat-square>
+  <img alt="Platforms" src=https://img.shields.io/badge/Platforms-x86__64-blue?style=flat-square>
+  <img alt="Languages" src=https://img.shields.io/badge/Languages-Python-red?style=flat-square>
+</div>
 
 ## Project Description
 The project represents a configurable swarm colony simulation. You can provide several parameters in the configuration files and start the app.
